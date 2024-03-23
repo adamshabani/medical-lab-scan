@@ -8,7 +8,7 @@ A user-friendly, web-based medical laboratory scan application.
 | :------------------------: | :-----------------------: |
 | ![](./desktop-preview.png) | ![](./mobile-preview.png) |
 
-Live [Demo](https://medical-lab-scan.vercel.app/)
+Live [Demo](https://theomaro.github.io/medical-lab-scan/)
 
 ## Testing
 

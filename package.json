@@ -23,7 +23,7 @@
   "bugs": {
     "url": "https://github.com/theomaro/medical-lab-scan/issues"
   },
-  "homepage": "https://github.com/theomaro/medical-lab-scan#readme",
+  "homepage": "https://theomaro.github.io/medical-lab-scan/",
   "dependencies": {
     "tailwindcss": "^3.4.1",
     "typescript": "^5.4.3"
