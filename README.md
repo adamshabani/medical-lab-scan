@@ -1,6 +1,23 @@
-# tailwind-typescript-starter
+# Medical Laboratory Scan
 
-A user-friendly starter template to use for TypeScript and Tailwind frontend projects
+A user-friendly, web-based medical laboratory scan application.
+
+## Preview
+
+|          Desktop           |          Mobile           |
+| :------------------------: | :-----------------------: |
+| ![](./desktop-preview.png) | ![](./mobile-preview.png) |
+
+Live [Demo](https://medical-lab-scan.vercel.app/)
+
+## Testing
+
+- Clone the project
+
+```npm
+git clone https://github.com/theomaro/medical-lab-scan.git
+cd medical-lab-scan
+```
 
 - Install packages
 
