@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tailwind and TypeScript Starter Template</title>
+    <title>eScan | Medical Lab</title>
 
     <link
       rel="stylesheet"
@@ -15,14 +15,56 @@
 
     <link rel="stylesheet" href="./dist/css/style.css" />
   </head>
-  <body>
-    <h1 class="text-3xl font-Roboto font-bold underline">
-      <i class="ri ri-reply-line"></i> Tailwind and TypeScript Starter Template
-    </h1>
+  <body class="font-Roboto">
+    <main
+      class="w-full min-h-screen flex justify-center items-center bg-slate-200 bg-opacity-75 pb-16"
+    >
+      <section class="max-w-md p-8 bg-white shadow-md space-y-8">
+        <div class="space-y-5">
+          <img src="./dist/images/logo1.jpg" alt="" />
 
-    <h1 class="text-3xl font-Encoded-Sans font-bold underline">
-      Tailwind and TypeScript Starter Template
-    </h1>
+          <div>
+            <h1 class="text-2xl font-semibold">Product ID</h1>
+            <p class="text-sm">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo
+              tempora veritatis iure.
+            </p>
+          </div>
+        </div>
+
+        <div
+          class="grid grid-cols-2 grid-rows-2 gap-3 border border-stone-300 rounded-md p-3"
+        >
+          <button
+            class="bg-white hover:bg-gray-100 text-gray-800 text-sm font-medium py-2 px-4 border border-gray-400 rounded shadow flex gap-4 capitalize"
+          >
+            <i class="ri-first-aid-kit-line"></i>
+            <span class="whitespace-nowrap">container's Details</span>
+          </button>
+
+          <button
+            class="bg-white hover:bg-gray-100 text-gray-800 text-sm font-medium py-2 px-4 border border-gray-400 rounded shadow flex gap-4 capitalize"
+          >
+            <i class="ri-medicine-bottle-line"></i>
+            <span class="whitespace-nowrap">supplier's details</span>
+          </button>
+
+          <button
+            class="bg-white hover:bg-gray-100 text-gray-800 text-sm font-medium py-2 px-4 border border-gray-400 rounded shadow flex gap-4 capitalize"
+          >
+            <i class="ri-medal-line"></i>
+            <span class="whitespace-nowrap">Usage details</span>
+          </button>
+
+          <button
+            class="bg-white hover:bg-gray-100 text-gray-800 text-sm font-medium py-2 px-4 border border-gray-400 rounded shadow flex gap-4 capitalize"
+          >
+            <i class="ri-question-line"></i>
+            <span class="whitespace-nowrap">Report</span>
+          </button>
+        </div>
+      </section>
+    </main>
   </body>
 
   <script src="./dist/js/index.js"></script>
