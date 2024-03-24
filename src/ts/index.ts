@@ -45,24 +45,6 @@ modalToggler.forEach((btn) => {
     </div>
 
     <div class="flex text-sm gap-2">
-      <h3 class="font-medium text-nowrap">ID:</h3>
-      <p
-        class="border-b-2 border-dotted basis-full text-gray-600 text-center uppercase"
-      >
-        2345-456-89
-      </p>
-    </div>
-
-    <div class="flex text-sm gap-2">
-      <h3 class="font-medium text-nowrap">Ward/Dr.</h3>
-      <p
-        class="border-b-2 border-dotted basis-full text-gray-600 text-center uppercase"
-      >
-        magogoni
-      </p>
-    </div>
-
-    <div class="flex text-sm gap-2">
       <h3 class="font-medium text-nowrap">Color:</h3>
       <p
         class="border-b-2 border-dotted basis-full text-gray-600 text-center uppercase"
@@ -80,26 +62,6 @@ modalToggler.forEach((btn) => {
       </p>
     </div>
 
-    <div class="flex justify-between gap-8">
-      <div class="flex text-sm gap-2 basis-[45%]">
-        <h3 class="font-medium text-nowrap">Date:</h3>
-        <p
-          class="border-b-2 border-dotted basis-full text-gray-600 text-center uppercase"
-        >
-          12 <sup>th</sup> Jan 2024
-        </p>
-      </div>
-
-      <div class="flex text-sm gap-2 basis-[45%]">
-        <h3 class="font-medium text-nowrap">Time:</h3>
-        <p
-          class="border-b-2 border-dotted basis-full text-gray-600 text-center uppercase"
-        >
-          12:00 Am
-        </p>
-      </div>
-    </div>
-
     <div class="flex text-sm gap-2">
       <h3 class="font-medium text-nowrap">Made in:</h3>
       <p
@@ -110,7 +72,48 @@ modalToggler.forEach((btn) => {
     </div>`;
     }
 
-    if (target.textContent?.includes("Report")) {
+    if (target.textContent?.includes("usage")) {
+      modalBody.innerHTML = `
+      <div class="flex text-sm gap-2">
+        <h3 class="font-medium text-nowrap">ID:</h3>
+        <p
+          class="border-b-2 border-dotted basis-full text-gray-600 text-center uppercase"
+        >
+          2345-456-89
+        </p>
+      </div>
+
+      <div class="flex text-sm gap-2">
+        <h3 class="font-medium text-nowrap">Ward/Dr.</h3>
+        <p
+          class="border-b-2 border-dotted basis-full text-gray-600 text-center uppercase"
+        >
+          magogoni
+        </p>
+      </div>
+
+      <div class="flex justify-between gap-8">
+        <div class="flex text-sm gap-2 basis-[45%]">
+          <h3 class="font-medium text-nowrap">Date:</h3>
+          <p
+            class="border-b-2 border-dotted basis-full text-gray-600 text-center uppercase"
+          >
+            12 <sup>th</sup> Jan 2024
+          </p>
+        </div>
+
+        <div class="flex text-sm gap-2 basis-[45%]">
+          <h3 class="font-medium text-nowrap">Time:</h3>
+          <p
+            class="border-b-2 border-dotted basis-full text-gray-600 text-center uppercase"
+          >
+            12:00 Am
+          </p>
+        </div>
+      </div>`;
+    }
+
+    if (target.textContent?.includes("report")) {
       modalBody.innerHTML = `<div class="space-y-1 mb-8">
         <h3 class="text-sm font-medium">
           Why are you reporting this container?

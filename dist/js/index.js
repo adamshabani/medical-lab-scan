@@ -9,7 +9,7 @@ modalClose.addEventListener("click", () => {
 });
 modalToggler.forEach((btn) => {
     btn.addEventListener("click", (e) => {
-        var _a, _b, _c, _d;
+        var _a, _b, _c, _d, _e;
         const target = e.currentTarget;
         modalTitle.textContent = (_b = (_a = target.textContent) === null || _a === void 0 ? void 0 : _a.trim()) !== null && _b !== void 0 ? _b : "";
         modalBody.innerHTML = `<p class="text-base leading-relaxed text-gray-500">
@@ -36,24 +36,6 @@ modalToggler.forEach((btn) => {
     </div>
 
     <div class="flex text-sm gap-2">
-      <h3 class="font-medium text-nowrap">ID:</h3>
-      <p
-        class="border-b-2 border-dotted basis-full text-gray-600 text-center uppercase"
-      >
-        2345-456-89
-      </p>
-    </div>
-
-    <div class="flex text-sm gap-2">
-      <h3 class="font-medium text-nowrap">Ward/Dr.</h3>
-      <p
-        class="border-b-2 border-dotted basis-full text-gray-600 text-center uppercase"
-      >
-        magogoni
-      </p>
-    </div>
-
-    <div class="flex text-sm gap-2">
       <h3 class="font-medium text-nowrap">Color:</h3>
       <p
         class="border-b-2 border-dotted basis-full text-gray-600 text-center uppercase"
@@ -71,26 +53,6 @@ modalToggler.forEach((btn) => {
       </p>
     </div>
 
-    <div class="flex justify-between gap-8">
-      <div class="flex text-sm gap-2 basis-[45%]">
-        <h3 class="font-medium text-nowrap">Date:</h3>
-        <p
-          class="border-b-2 border-dotted basis-full text-gray-600 text-center uppercase"
-        >
-          12 <sup>th</sup> Jan 2024
-        </p>
-      </div>
-
-      <div class="flex text-sm gap-2 basis-[45%]">
-        <h3 class="font-medium text-nowrap">Time:</h3>
-        <p
-          class="border-b-2 border-dotted basis-full text-gray-600 text-center uppercase"
-        >
-          12:00 Am
-        </p>
-      </div>
-    </div>
-
     <div class="flex text-sm gap-2">
       <h3 class="font-medium text-nowrap">Made in:</h3>
       <p
@@ -100,7 +62,47 @@ modalToggler.forEach((btn) => {
       </p>
     </div>`;
         }
-        if ((_d = target.textContent) === null || _d === void 0 ? void 0 : _d.includes("Report")) {
+        if ((_d = target.textContent) === null || _d === void 0 ? void 0 : _d.includes("usage")) {
+            modalBody.innerHTML = `
+      <div class="flex text-sm gap-2">
+        <h3 class="font-medium text-nowrap">ID:</h3>
+        <p
+          class="border-b-2 border-dotted basis-full text-gray-600 text-center uppercase"
+        >
+          2345-456-89
+        </p>
+      </div>
+
+      <div class="flex text-sm gap-2">
+        <h3 class="font-medium text-nowrap">Ward/Dr.</h3>
+        <p
+          class="border-b-2 border-dotted basis-full text-gray-600 text-center uppercase"
+        >
+          magogoni
+        </p>
+      </div>
+
+      <div class="flex justify-between gap-8">
+        <div class="flex text-sm gap-2 basis-[45%]">
+          <h3 class="font-medium text-nowrap">Date:</h3>
+          <p
+            class="border-b-2 border-dotted basis-full text-gray-600 text-center uppercase"
+          >
+            12 <sup>th</sup> Jan 2024
+          </p>
+        </div>
+
+        <div class="flex text-sm gap-2 basis-[45%]">
+          <h3 class="font-medium text-nowrap">Time:</h3>
+          <p
+            class="border-b-2 border-dotted basis-full text-gray-600 text-center uppercase"
+          >
+            12:00 Am
+          </p>
+        </div>
+      </div>`;
+        }
+        if ((_e = target.textContent) === null || _e === void 0 ? void 0 : _e.includes("report")) {
             modalBody.innerHTML = `<div class="space-y-1 mb-8">
         <h3 class="text-sm font-medium">
           Why are you reporting this container?
