@@ -4,9 +4,9 @@ A user-friendly, web-based medical laboratory scan application.
 
 ## Preview
 
-|          Desktop           |          Mobile           |
-| :------------------------: | :-----------------------: |
-| ![](./desktop-preview.png) | ![](./mobile-preview.png) |
+|                    |                     |
+| :----------------: | :-----------------: |
+| ![](./preview.png) | ![](./preview2.png) |
 
 Live [Demo](https://theomaro.github.io/medical-lab-scan/)
 
